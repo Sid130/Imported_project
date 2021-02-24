@@ -1,0 +1,11 @@
+<div *ngIf="fname!=undefined;else  signup">
+<h1>Welcome {{fname}}</h1>
+</div>
+
+<ng-template #signup>
+    <h1>Welcome {{username}}</h1><br>
+    </ng-template>
+
+    
+
+<app-graph-dashboard></app-graph-dashboard>

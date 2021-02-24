@@ -1,0 +1,31 @@
+
+<div id="divchart">
+    
+    <canvas id="myChart" width="400" height="400"></canvas>
+    
+    <div class="form-group">
+        <label for="sel1">Select Graph Type</label>
+        <select class="form-control" #selectElem id="type" (change)="setgraphtype(selectElem.value)">
+          <option *ngFor="let type of graphtype" [value]='type' selected="selected">
+              {{type}}
+            </option>
+        </select>
+      </div>
+    
+    </div>
+   
+
+    <div id="divchart">
+    
+      <canvas id="mysecondChart" width="400" height="400"></canvas>
+      
+      <div class="form-group">
+          <label for="sel1">Select Graph Type</label>
+          <select class="form-control" #selectElem2 id="type1" (change)="setsecondgraphtype(selectElem2.value)">
+            <option *ngFor="let type of graphtype" [value]='type' selected="selected">
+                {{type}}
+              </option>
+          </select>
+        </div>
+      
+      </div>
